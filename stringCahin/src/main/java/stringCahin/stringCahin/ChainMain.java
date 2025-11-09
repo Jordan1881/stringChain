@@ -2,11 +2,25 @@ package stringCahin.stringCahin;
 
 
 
-//מחלקת הפעלה
 public class ChainMain {
-public static void main(String[] args) {
-   A start = new A();
-   String result = start.process(""); // מתחילים ממחרוזת ריקה
-   System.out.println("Final result: " + result);
+	
+
+
+	public String run() {
+        // יצירת השרשרת לפי הסדר הנכון
+        E e = new E();
+        D d = new D(e);
+        C c = new C(d);
+        B b = new B(c);
+        A a = new A(b);
+
+        // קריאה לשרשרת מההתחלה
+        String result = a.process("");
+
+        // הדפסת התוצאה הסופית למסך
+        return result;    }
+
 }
-}
+
+
+
