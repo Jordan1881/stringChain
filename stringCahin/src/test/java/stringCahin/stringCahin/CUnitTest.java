@@ -5,15 +5,15 @@ import static org.junit.Assert.*;
 public class CUnitTest {
     @Test
     public void testCWithStub() {
-        // יוצרים סטאב של D
+        // create stub of D
         DStub stub = new DStub();
-        // יוצרים את C עם הסטאב
+        // create C with the stub
         C c = new C(stub);
 
-        // קוראים ל־C — לא לסטאב!
+        // call "C" and not the stub!
         String result = c.process("HE");
 
-        // מאמתים את הפלט
+        // validate the output
         assertEquals("HELX", result);
     }
 }
