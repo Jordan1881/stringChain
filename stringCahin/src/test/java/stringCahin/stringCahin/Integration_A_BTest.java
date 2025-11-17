@@ -12,7 +12,8 @@ public class Integration_A_BTest {
         B realB = new B(cStub);        // real B
         A realA = new A(realB);        // real A
 
-        // Act:
+        
+        // Act: aka
         String result = realA.process("");
 
         // Assert:
