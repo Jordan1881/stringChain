@@ -11,9 +11,8 @@ public class Integration_A_BTest {
         CStub cStub = new CStub();     // stub replaces C
         B realB = new B(cStub);        // real B
         A realA = new A(realB);        // real A
-tt
-        
-        // Act: aka
+
+        // Act
         String result = realA.process("");
 
         // Assert:
