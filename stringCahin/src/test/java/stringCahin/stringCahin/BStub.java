@@ -1,10 +1,10 @@
 package stringCahin.stringCahin;
 
 public class BStub extends B {
-    public  BStub() {super(null);}
-	
+    public BStub() { super(null); }
+
     @Override
     public String process(String prefix) {
-        return prefix + "X"; // הוספה מדומה
+        return prefix + "X"; // test stub appends X
     }
 }
