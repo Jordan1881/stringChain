@@ -10,10 +10,10 @@ public class B {
 	}
 
 	public String process(String prefix) {
-	  
 	   String updated = next.process(prefix + "E");
-	   
-	   return prefix + "E";
+	   // Propagate downstream result so the full chain contributes to the output
+	   return updated;
 
-	   
-	}}
+	}
+
+}

@@ -15,7 +15,7 @@ public class Integration_A_BTest {
         // Act
         String result = realA.process("");
 
-        // Assert:
-        assertEquals("HE", result);
+        // Assert: with CStub appending "Y", full result includes it
+        assertEquals("HEY", result);
     }
 }
