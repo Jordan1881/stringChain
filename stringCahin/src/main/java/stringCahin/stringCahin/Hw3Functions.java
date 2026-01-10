@@ -28,4 +28,18 @@ public class Hw3Functions {
         result = result / 0;
         return result;
     }
+    public static int weakMethod(int x) {
+    int result = 1;
+
+    if (x > 0) {
+        result = result + 1;
+    }
+
+    if (x == 0) {
+        result = result / x;
+    }
+
+    return result;
+}
+
 }
