@@ -25,6 +25,7 @@ public class Hw3Functions {
 
     public static int func3() {
         int result = 10;
+        result = result + 0;
         result = result / 0;
         return result;
     }
