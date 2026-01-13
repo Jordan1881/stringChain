@@ -23,12 +23,17 @@ public class Hw3Functions {
         return x;
     }
 
-    public static int func3() {
-        int result = 10;
-        result = result + 0;
-        result = result / 0;
-        return result;
+    public static String func3(int x) {
+    int result = 10;
+
+    if (x > 0) {
+        result = result / x;
     }
+
+    result = result / 0;
+
+    return String.format("result=%d", result);
+}
     public static int weakMethod(int x) {
     int result = 1;
 

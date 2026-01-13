@@ -20,6 +20,6 @@ public class Func1Test {
 
     @Test(expected = ArithmeticException.class)
     public void T3() {
-        Hw3Functions.func1(0, 1, 50);
+        Hw3Functions.func1(0, 0, 50);
     }
 }

@@ -16,4 +16,10 @@ public class WeakMethodTest {
     public void T2() {
         Hw3Functions.weakMethod(0);
     }
+
+    @Test
+    public void T3() {
+        int result = Hw3Functions.weakMethod(-1);
+        assertEquals(1, result);
+    }
 }

@@ -5,12 +5,12 @@ import org.junit.Test;
 public class Func3Test {
 
     @Test(expected = ArithmeticException.class)
-    public void T1() {
-        Hw3Functions.func3();
+    public void T1_xGreaterThanZero() {
+        Hw3Functions.func3(2);
     }
 
     @Test(expected = ArithmeticException.class)
-    public void T2() {
-        Hw3Functions.func3();
+    public void T2_xEqualsZero() {
+        Hw3Functions.func3(0);
     }
 }
